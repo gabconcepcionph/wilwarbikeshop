@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>WILWAR BIKE SHOP | Bike Shop in Imus</title>
+  <meta name="description" content="WILWAR BIKE SHOP - Your bike shop in Imus, Philippines. Parts installation, bike maintenance, hydraulic brake maintenance, hubs maintenance." />
+  <meta name="keywords" content="bike shop, bicycle store, Imus Philippines, WILWAR BIKE SHOP, parts installation, bike maintenance, hydraulic brake" />
+  <meta name="author" content="WILWAR BIKE SHOP" />
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WILWAR BIKE SHOP | Bike Shop" />
+  <meta property="og:description" content="Your bike shop in Imus, Philippines." />
+  <meta property="og:image" content="https://wilwarbikeshop.vikaph.com/images/hero.jpg" />
+  <meta property="og:url" content="https://wilwarbikeshop.vikaph.com" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WILWAR BIKE SHOP | Bike Shop" />
+  <meta name="twitter:description" content="Your bike shop in Imus, Philippines." />
+  <meta name="twitter:image" content="https://wilwarbikeshop.vikaph.com/images/hero.jpg" />
+  
+  <!-- Tailwind CSS v3 -->
+  <script src="https://assets.vikaph.com/tailwindcss-3.4.17.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary:   '#DC2626',
+              secondary: '#EF4444',
+              accent:    '#F59E0B',
+              dark:      '#7F1D1D',
+              light:     '#FEF2F2',
+              muted:     '#6B7280',
+            }
+          },
+          fontFamily: {
+            heading: ['Teko', 'sans-serif'],
+            body:    ['Open Sans', 'sans-serif'],
+            accent:  ['Russo One', 'sans-serif'],
+          },
+          borderRadius: {
+            card:   '0.5rem',
+            btn:    '0.25rem',
+          },
+          boxShadow: {
+            card:   '0 4px 20px rgba(220, 38, 38, 0.1)',
+            hero:   '0 8px 40px rgba(220, 38, 38, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  
+  <!-- Brand CSS Variables -->
+  <style>
+    :root {
+      --color-primary:   '#DC2626';
+      --color-secondary: '#EF4444';
+      --color-accent:    '#F59E0B';
+      --color-dark:      '#7F1D1D';
+      --color-light:     '#FEF2F2';
+      --color-muted:     '#6B7280';
+      --font-heading: 'Teko', sans-serif;
+      --font-body:    'Open Sans', sans-serif;
+      --font-accent:  'Russo One', sans-serif;
+      --radius-card: 0.5rem;
+      --radius-btn:  0.25rem;
+      --shadow-card: 0 4px 20px rgba(220, 38, 38, 0.1);
+    }
+    body { font-family: var(--font-body); }
+    h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+  </style>
+</head>
+<body class="bg-[var(--color-light)] text-[var(--color-dark)] overflow-x-hidden">
+
+  <!-- Preview Banner -->
+  <div class="fixed top-0 left-0 right-0 bg-[var(--color-dark)] text-white py-2 px-4 text-center z-50 text-sm">
+    <span class="mr-2">🚧 Preview Website</span>
+    <a href="https://www.vikaph.com/" target="_blank" class="text-[var(--color-secondary)] hover:text-[var(--color-primary)] font-semibold underline">
+      Get your website at vikaph.com
+    </a>
+  </div>
+
+  <!-- Navigation -->
+  <header class="fixed top-8 w-full z-40 bg-white/90 backdrop-blur-sm border-b border-[var(--color-muted)]/20 shadow-sm">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="font-heading text-2xl font-bold text-[var(--color-primary)] uppercase tracking-wider">
+        WILWAR BIKE SHOP
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">About</a>
+        <a href="#services" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Services</a>
+        <a href="#gallery" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Gallery</a>
+        <a href="#reviews" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Reviews</a>
+        <a href="#contact" class="text-sm font-medium text-[var(--color-dark)] hover:text-[var(--color-primary)] transition-colors">Contact</a>
+      </div>
+      <a href="#contact" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors text-sm uppercase">
+        Visit Us
+      </a>
+    </nav>
+  </header>
+
+  <main class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-end md:items-center justify-center overflow-hidden">
+      <img
+        src="images/hero.jpg"
+        alt="WILWAR BIKE SHOP - bicycle shop with bikes on display"
+        class="absolute inset-0 w-full h-full object-cover object-center z-0 max-w-full"
+        fetchpriority="high"
+        width="1920"
+        height="1080"
+      />
+      <div class="absolute inset-0 z-10 bg-gradient-to-top from-[var(--color-dark)]/85 via-[var(--color-dark)]/60 via-[55%] to-transparent"></div>
+      <div class="absolute inset-x-0 top-0 h-40 z-10 bg-gradient-to-bottom from-[var(--color-dark)]/50 to-transparent"></div>
+      <div class="absolute inset-0 z-15 bg-black/60"></div>
+      <div class="relative z-20 text-center text-white max-w-3xl mx-auto px-6 pt-16 pb-20 md:pb-0">
+        <p class="font-body text-sm uppercase tracking-widest text-white/70 mb-4">
+          Bike Shop · Imus, Philippines
+        </p>
+        <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight mb-4 uppercase">
+          WILWAR BIKE SHOP
+        </h1>
+        <p class="font-body text-lg text-white/80 mb-2">
+          21 General Yengco Street, Imus, Philippines
+        </p>
+        <p class="font-body text-sm text-white/60 mb-8">
+          ★ [FILL IN RATING] · [FILL IN REVIEW COUNT] Google Reviews
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#contact" class="bg-[var(--color-primary)] text-white px-8 py-4 rounded-[var(--radius-btn)] font-heading font-semibold hover:bg-[var(--color-secondary)] transition-colors text-lg uppercase">
+            Get Directions
+          </a>
+          <a href="#services" class="border-2 border-white/70 text-white px-8 py-4 rounded-[var(--radius-btn)] font-heading font-semibold hover:bg-white hover:text-[var(--color-dark)] transition-colors uppercase">
+            Our Services ↓
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <img
+            src="images/about.jpg"
+            alt="Bicycle workshop at WILWAR BIKE SHOP"
+            class="rounded-[var(--radius-card)] object-cover w-full h-80 md:h-full shadow-[var(--shadow-card)]"
+            width="800"
+            height="600"
+          />
+          <div>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-6 uppercase">
+              About WILWAR BIKE SHOP
+            </h2>
+            <p class="font-body text-base text-[var(--color-muted)] leading-relaxed mb-4">
+              WILWAR BIKE SHOP is your trusted bike shop in Imus, Philippines. We specialize in parts installation, bike maintenance, hydraulic brake maintenance, and hubs maintenance.
+            </p>
+            <p class="font-body text-base text-[var(--color-muted)] leading-relaxed mb-6">
+              Visit us at 21 General Yengco Street for all your cycling needs!
+            </p>
+            <div class="flex gap-8 mt-6">
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">Expert</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Service</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">Quality</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Parts</div>
+              </div>
+              <div class="text-center">
+                <div class="font-heading text-3xl font-bold text-[var(--color-primary)]">Reliable</div>
+                <div class="font-body text-sm text-[var(--color-muted)]">Maintenance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-[var(--color-dark)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4 uppercase">
+            Our Services
+          </h2>
+          <p class="font-body text-lg text-white/70">
+            Complete bicycle solutions
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <h3 class="font-heading font-semibold text-white text-xl mb-3">Parts Installation</h3>
+            <p class="font-body text-sm text-white/70">Professional parts installation</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <h3 class="font-heading font-semibold text-white text-xl mb-3">Bike Maintenance</h3>
+            <p class="font-body text-sm text-white/70">Regular maintenance and tune-ups</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <h3 class="font-heading font-semibold text-white text-xl mb-3">Hydraulic Brake Maintenance</h3>
+            <p class="font-body text-sm text-white/70">Expert hydraulic brake service</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <h3 class="font-heading font-semibold text-white text-xl mb-3">Hubs Maintenance</h3>
+            <p class="font-body text-sm text-white/70">Hub servicing and repair</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <h3 class="font-heading font-semibold text-white text-xl mb-3">Bike Parts</h3>
+            <p class="font-body text-sm text-white/70">Quality parts and accessories</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <h3 class="font-heading font-semibold text-white text-xl mb-3">Custom Builds</h3>
+            <p class="font-body text-sm text-white/70">Personalized bike builds</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] mb-4 uppercase">
+            Our Gallery
+          </h2>
+          <p class="font-body text-lg text-[var(--color-muted)]">
+            Check out our bikes and shop
+          </p>
+        </div>
+        <div class="columns-2 md:columns-3 gap-3">
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/01.jpg" alt="Bicycle on display" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/02.jpg" alt="Bicycle parts and accessories" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/03.jpg" alt="Bicycle" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/04.jpg" alt="Bicycle" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/05.jpg" alt="Bicycle workshop" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+          <div class="break-inside-avoid mb-3 rounded-[var(--radius-card)] overflow-hidden cursor-pointer group relative">
+            <img src="images/gallery/06.jpg" alt="Bike shop interior" class="w-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+            <div class="absolute inset-0 bg-[var(--color-dark)]/0 group-hover:bg-[var(--color-dark)]/20 transition-colors"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="bg-[var(--color-dark)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-white text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4 uppercase">
+            What Our Customers Say
+          </h2>
+          <p class="font-body text-lg text-white/70">
+            ★ [FILL IN RATING] based on [FILL IN REVIEW COUNT] Google reviews
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-lg mb-3">★★★★★</div>
+            <blockquote class="font-body italic text-white/80 mt-3 leading-relaxed">
+              "Great service and expert work on my bike!"
+            </blockquote>
+            <cite class="font-body font-semibold text-white mt-4 block not-italic">— [Customer Name]</cite>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-lg mb-3">★★★★★</div>
+            <blockquote class="font-body italic text-white/80 mt-3 leading-relaxed">
+              "Excellent hydraulic brake maintenance. Highly recommended!"
+            </blockquote>
+            <cite class="font-body font-semibold text-white mt-4 block not-italic">— [Customer Name]</cite>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-[var(--radius-card)] p-6 text-white">
+            <div class="text-[var(--color-accent)] text-lg mb-3">★★★★★</div>
+            <blockquote class="font-body italic text-white/80 mt-3 leading-relaxed">
+              "Friendly staff and quality parts. Will definitely come back."
+            </blockquote>
+            <cite class="font-body font-semibold text-white mt-4 block not-italic">— [Customer Name]</cite>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="https://www.google.com/maps/place/WILWAR+BIKE+SHOP" target="_blank" rel="noopener" class="border border-white text-white px-6 py-3 rounded-[var(--radius-btn)] hover:bg-white hover:text-[var(--color-dark)] transition-colors">
+            Read More Reviews on Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-[var(--color-light)] py-16 md:py-24 px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="space-y-6">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-[var(--color-dark)] uppercase">
+              Visit Us
+            </h2>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span class="font-body text-[var(--color-dark)]">21 General Yengco Street, Imus, Philippines</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span class="font-body text-[var(--color-dark)]">+63 975 439 0518</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="font-body text-[var(--color-dark)]">wilwarbikeshop@yahoo.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[var(--color-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span class="font-body text-[var(--color-dark)]">[FILL IN HOURS]</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://www.facebook.com/wbikershop/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[var(--color-primary)] flex items-center justify-center transition-colors">
+                <svg class="w-5 h-5 text-[var(--color-dark)]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="rounded-[var(--radius-card)] overflow-hidden shadow-[var(--shadow-card)] w-full h-80 lg:h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.123456789!2d120.9351971!3d14.4069972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d3c1482e8e3f%3A0x3cba2abcd4ad637c!2sWILWAR+BIKE+SHOP!5e0!3m2!1sen!2sph!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/place/WILWAR+BIKE+SHOP" target="_blank" rel="noopener" class="bg-[var(--color-primary)] text-white px-6 py-3 rounded-[var(--radius-btn)] font-semibold hover:bg-[var(--color-secondary)] transition-colors w-full text-center mt-6 inline-block uppercase">
+          Get Directions
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#7F1D1D] text-white py-16 px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4 uppercase">WILWAR BIKE SHOP</h3>
+        <p class="font-body text-sm text-white/60 mb-4">Your trusted bike shop in Imus, Philippines.</p>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/wbikershop/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-[var(--color-primary)] flex items-center justify-center transition-colors">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4 uppercase">Quick Links</h3>
+        <a href="#about" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">About</a>
+        <a href="#services" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Services</a>
+        <a href="#gallery" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Gallery</a>
+        <a href="#reviews" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Reviews</a>
+        <a href="#contact" class="font-body text-sm text-white/60 hover:text-white transition-colors block mb-2">Contact</a>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4 uppercase">Hours</h3>
+        <p class="font-body text-sm text-white/60 mb-2">[FILL IN HOURS]</p>
+      </div>
+      <div>
+        <h3 class="font-heading font-semibold text-white mb-4 uppercase">Contact</h3>
+        <p class="font-body text-sm text-white/60 mb-2">21 General Yengco Street</p>
+        <p class="font-body text-sm text-white/60 mb-2">Imus, Philippines</p>
+        <p class="font-body text-sm text-white/60 mb-2">+63 975 439 0518</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-12 pt-8 text-center max-w-6xl mx-auto">
+      <p class="font-body text-sm text-white/40">
+        © 2026 WILWAR BIKE SHOP · All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BicycleStore",
+    "name": "WILWAR BIKE SHOP",
+    "image": "https://wilwarbikeshop.vikaph.com/images/hero.jpg",
+    "url": "https://wilwarbikeshop.vikaph.com",
+    "telephone": "+63 975 439 0518",
+    "email": "wilwarbikeshop@yahoo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "21 General Yengco Street",
+      "addressLocality": "Imus",
+      "addressRegion": "Cavite",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://www.facebook.com/wbikershop/"
+    ]
+  }
+  </script>
+
+</body>
+</html>

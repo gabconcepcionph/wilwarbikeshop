@@ -1,0 +1,11 @@
+# TODO - WILWAR BIKE SHOP
+
+## Missing Data to Fill In
+- Hours: [FILL IN HOURS]
+- Rating: [FILL IN RATING]
+- Review Count: [FILL IN REVIEW COUNT]
+
+## Notes
+- Google Maps page is JavaScript-rendered, could not extract business details
+- Used data from Facebook search results
+- Images downloaded from Unsplash as fallback
