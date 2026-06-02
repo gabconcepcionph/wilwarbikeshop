@@ -15,9 +15,9 @@
 - **Lead ID:** 60650f36-452e-4f1d-ace4-e7c511d39e86
 
 ## Deployment Status
-- **Git Repository:** pending
-- **Vercel Deployment:** pending
-- **QA Status:** pending
+- **Git Repository:** created
+- **Vercel Deployment:** configured (subdomain pending DNS propagation)
+- **QA Status:** in progress
 
 ## Notes
 - Google Maps page is JavaScript-rendered, could not extract business details
